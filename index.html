@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em POa Yeu Dau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">📨 PoaPoayeudau.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize">_</button>
+                <button aria-label="Maximize">❏</button>
+                <button aria-label="Close" onclick="showPopup()">X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>Xin chào em Poaa, Anh là Tunie nè người yêu dáu cụa Poa nòo</p>
+            <p>Bây giờ em hãy nhập tên nhá. Anh Tunie hay gọi em là gì?</p>
+            <input type="text" id="nameInput" placeholder="Em Poa nhập ở đây nè" onkeypress="handleKeyPress(event)">
+            <button onclick="checkName()">Nộp bàiiiiii choa anh yêu</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-title-bar">
+            <div class="popup-title-bar-text">🔪 batcocemPoa.exe</div>
+            <div class="popup-title-bar-controls">
+                <button aria-label="Close" class="popup-close" onclick="showAnotherPopup()">X</button>
+            </div>
+        </div>
+        <div class="popup-content">
+            <span class="popup-icon">Nghiêm trọng roài đó!!!!!</span>
+            <div class="popup-body">
+                <p>Nàooo! em định bỏ trốn bỏ anh đúng hăm em Poa. Ai choaaaaaaa</p>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-close" onclick="hidePopup()">I'll be there...</button>
+            </div>
+        </div>
+    </div>
+    <div id="anotherPopup" class="popup">
+        <div class="popup-title-bar">
+            <div class="popup-title-bar-text">⚠️ Nàoooo Ai choa trốn!</div>
+            <div class="popup-title-bar-controls">
+                <button aria-label="Close" class="popup-close" onclick="hideAnotherPopup()">X</button>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-body">
+                <p>em định bỏ trốn nữa hả. HEHE em hong thoát được anh đâu bé Poa 👺</p>
+            </div>
+        </div>
+    </div>
+    <div id="oopsPopup" class="popup">
+        <div class="popup-title-bar">
+            <div class="popup-title-bar-text">⚠️ huhuhuuhu.exe</div>
+            <div class="popup-title-bar-controls">
+                <button aria-label="Close" class="popup-close" onclick="hideOopsPopup()">X</button>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-body">
+                <p>Hehe bé nhập sai roàii nhập lại đii! Em hết iu anh roài chớ gìi!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
