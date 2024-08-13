@@ -292,3 +292,61 @@ button:active {
   from {opacity: .4}
   to {opacity: .8}
 }
+/* ####################### */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20px; */
+  }
+
+.gallery img {
+width: 500px;
+height: 333px;
+object-fit: cover;
+
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+/* margin-top: 20px; */
+}
+
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown-content {
+visibility: hidden;
+top:10px;
+left:100%;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 100px;
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+/* z-index: 1000; */
+}
+
+.dropdown-content div {
+padding: 10px;
+cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+@media (max-width: 767px) {
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+}

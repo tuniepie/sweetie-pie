@@ -80,3 +80,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function changeImage(src, alt) {
+    document.querySelector('.gallery img').src = src;
+    document.querySelector('.gallery img').alt = alt;
+    document.querySelector('.dropdown button.dropbtn').textContent = alt;
+  }
