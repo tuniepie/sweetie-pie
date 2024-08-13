@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     color: #482f87;
-    background-image: url('bg.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-image: url('img/bg.jpg'); /* Replace 'background_image.jpg' with the path to your image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */

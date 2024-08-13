@@ -8,7 +8,7 @@ body {
     background-color: #008080; /* Teal background color */
     margin: 0;
     color: #000;
-    background-image: url('window98.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-image: url('img/window98.jpg'); /* Replace 'background_image.jpg' with the path to your image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the background image */
